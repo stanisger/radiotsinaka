@@ -1,9 +1,12 @@
+/* estructura */
 @import "variables.css";
 @import "structur.css";
+@import "./components/text.css";
 
+/* librerias */
 @import "./libs/owl.carousel.min.css";
 
-@import "./components/text.css";
+/* componentes */
 @import "./components/header.css";
 @import "./components/tools-mobile.css";
 @import "./components/blog.css";

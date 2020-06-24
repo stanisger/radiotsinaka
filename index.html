@@ -31,7 +31,7 @@
     </ul>
   </div>
 
-  <!-- Your page content lives here -->
+  <!-- Empieza el código del sitio-->
   <div class="off-canvas-content" data-off-canvas-content>
 
      
@@ -145,6 +145,7 @@
      
     </header>
 
+    <!-- logotipo en versión móbile--> 
     <div class="mobil-logo">
       <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
     </div>
@@ -181,7 +182,7 @@
       </div>
     </section>
      
-    <!-- extracto de noticias -->
+    <!-- Extracto de noticias -->
     <section class="blog-tsinaka home">
       
       <a class="btn-link-all" href="#">ver todo <i class="fas fa-chevron-right"></i> </a>
@@ -259,7 +260,7 @@
 
     </section>
 
-    <!-- extracto de progrmas radiofónicos -->
+    <!-- Extracto de programas radiofónicos -->
     <section class="programas-home home bg-ter" >
        
       <article class="programas-tsinaka_item">
@@ -338,7 +339,7 @@
 
     </section>
 
-    <!-- extracto de series radiofónicas -->
+    <!-- Extracto de series radiofónicas -->
     <section class="series-home home" >
        
      
@@ -383,7 +384,7 @@
 
     </section>
 
-    <!-- extracto de programas de apoyo -->
+    <!-- Extracto de programas de apoyo -->
     <section class="apoyo-home home bg-fou">
         <article class="apoyo-tsinaka_item">
           <div class="content-text title-section text-center">
@@ -459,7 +460,7 @@
       </div>
     </section>
 
-    <!-- extracto sección d multimedia inicio-->
+    <!-- Extracto sección multimedia inicio-->
     <section class="multimedia-home home">
       <article class="multimedia-tsinaka_item">
         <div class="title-section-img">
@@ -487,14 +488,15 @@
       </div>
     </div>
 
-  </section>
+    </section>
 
+    <!-- Footer -->
   <footer class="marketing-site-footer">
     <div class="footer-content">
         <div class="grid-x medium-unstack">
 
           <div class="medium-3 cell">
-            <h3 class="marketing-site-footer-name">Radio Tsinak</h3>
+            <h3 class="marketing-site-footer-name">Radio Tsinaka</h3>
             <p>San Miguel Tzinacapan, Cuetzalan <br>
               del Progreso. <br>
               Calle: 20 de Noviembre.</p>
@@ -540,16 +542,15 @@
       </div>
     </footer>
     
+    <!-- Derechos de autor -->
     <div class="marketing-site-footer-bottom">
       <div class="content-footer">
         Todos lo derechos reservados, Radio Tsinaka 2020.   |  Al utilizar este sitio web usted acepta el uso de cookies.  <a href="#">Más información</a>
       </div>
     </div>
   
-  
-
-
   </div>
+<!-- /////////fin del sitio web -->
     
 <!-- Compressed JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -558,6 +559,8 @@
 <script src="./assets/js/app.js"></script>
 <script>
   $(document).ready(function() {
+
+      // carrusel de programas
     $('.owl-carousel-programs').owlCarousel({
       loop: true,
       margin: 10,
@@ -581,7 +584,8 @@
         }
       }
     });
-
+  
+  // carrusel de series radiofónicas
     $('.owl-carousel-series').owlCarousel({
       loop: true,
       margin: 10,
@@ -605,7 +609,8 @@
         }
       }
     });
-
+     
+    // carrusel de eyecatcher
     $('.owl-carousel-eye').owlCarousel({
     
     autoplay: true,
