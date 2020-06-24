@@ -276,14 +276,14 @@ header .logo-radio-tsinaka {
 .version-web {
     /* background-color: var(--fou); */
     display: flex;
-    font-size: .7rem;
+    font-size: .8rem;
     padding: 1rem;
     text-transform: uppercase;
     justify-content: flex-end;
 }
 .version-web .fa-search {
-    font-size: 1rem;
-    margin-left: 1rem;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
 }
 
 @media(min-width:768px){
@@ -309,4 +309,18 @@ header .logo-radio-tsinaka {
     .version-web a.active {
         color: black;
         font-weight: bold;
+    }
+
+
+    .dropdown-pane {
+        position: absolute;
+        z-index: 10;
+        display: none;
+        width: 300px;
+        padding: 1rem 1rem .2rem;
+        visibility: hidden;
+        border: 1px solid #cacaca;
+        border-radius: 0;
+        background-color: #fefefe;
+        font-size: .9rem;
     }
