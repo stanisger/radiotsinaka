@@ -1,0 +1,189 @@
+/* Hoja de estilos para atibutos de textos en general.content-text
+1- Fechas, pies de pagina.
+2- Título.
+3- Descriptivo o parrafo.
+4- Links.
+5- Subtítulos.
+6- Imágenes dentro de los textos.
+7- texto resaltados.
+*/
+
+ 
+    /* 1- Fechas, pies de pagina. */
+    .content-text .date {
+        font-family: var(--btns);
+        font-size: .7rem;
+        color: black;
+    }
+
+    .content-text.-in {
+        position: relative;
+        padding: .5rem 0;
+    }
+
+    /* 2- Título. */
+    .content-text .title {
+        font-weight: 600;
+    }
+
+    .content-text .title.-bold {
+        font-weight: 700;
+        font-size: 1.7rem;
+        letter-spacing: -.8px;
+    }
+
+
+    .content-text.-in .title {
+        font-weight: 700;
+        font-size: 1.4rem;
+        letter-spacing: -.8px;
+    }
+
+    /* 3- Descriptivo o parrafo. */
+    .content-text p {
+        color: black;
+        line-height: 1rem;
+        font-family: var(--body);
+        font-size: .7rem;
+        margin-bottom: 0;
+    }
+
+        @media (min-width: 620px) {
+            .content-text p {
+                line-height: 1.2rem;
+                font-size: .8rem;
+            }
+        }
+    
+            @media (min-width: 768px) {
+                .content-text p {
+                    line-height: 1.4rem;
+                    font-size: .9rem;
+                }
+            }
+
+        .content-text p {
+        color: black;
+        line-height: 1rem;
+        font-family: var(--body);
+        font-size: .7rem;
+        margin-bottom: 0;
+    }
+
+        @media (min-width: 620px) {
+            .content-text p {
+                line-height: 1.2rem;
+                font-size: .8rem;
+            }
+        }
+    
+            @media (min-width: 768px) {
+                .content-text p {
+                    line-height: 1.4rem;
+                    font-size: .9rem;
+                }
+            }
+
+    .content-text p.descript {
+        color: grey;
+        line-height: 1rem;
+        font-family: var(--body);
+        font-size: .7rem;
+        margin-bottom: 0;
+    }
+
+        @media (min-width: 620px) {
+            .content-text p.descript {
+                line-height: 1.2rem;
+                font-size: .8rem;
+                margin-bottom: 1rem;
+            }
+        }
+    
+            @media (min-width: 768px) {
+                .content-text p.descript {
+                    line-height: 1.9rem;
+                    font-size: 1.3rem;
+                    
+                }
+            }
+    
+            
+    /* 3- Links. */
+    .content-text a {
+        color: var(--sec);
+        text-decoration: underline;
+        transition: all .4s ease;
+    }
+
+        .content-text a:hover {
+            opacity: .4;
+        }
+
+    /* 4- Subítulo. */
+    .content-text .subtitle {
+        color: var(--main);
+        font-weight: normal;
+    }
+
+    /* 5- Imágenes dentro del texto. */
+    .content-text img {
+        display: block;
+        width: 80%;
+        margin:1rem auto 0;
+    }
+
+        .content-text caption {
+            color: black;
+            font-family: var(--btns);
+            font-size: .85rem;
+        }
+
+
+    /* 6- Texto resaltado */
+    .content-text img {
+        background-color: var(--fou);
+        font-family: var(--title);
+        font-size: 1.3rem;
+        color: black;
+        padding: 2rem 1rem;
+    }
+
+    a {
+        font-family: var(--body);
+    }
+
+
+    
+    .eyecatcher-in .content-text .subtitle-category {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+        .eyecatcher-in .content-text .subtitle-category {
+            font-size: 1.4rem;
+        }
+    }
+
+    .eyecatcher-in .content-text .title_int {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 800;
+        text-shadow: 1px 0px 5px rgba(0, 0, 0, .3)
+    }
+
+        @media (min-width: 768px) {
+            .eyecatcher-in .content-text .title_int {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+        }
+
+            @media (min-width: 768px) {
+                .eyecatcher-in .content-text .title_int {
+                    font-size: 4rem;
+                    line-height: 4rem;
+                    letter-spacing: -2px;
+                }
+            }

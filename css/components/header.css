@@ -1,0 +1,312 @@
+
+.off-canvas .menu {
+    margin-top: 2rem;
+}
+
+.off-canvas .menu a {
+    color: black;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.off-canvas .menu a i {
+    font-size: 1.3rem;
+    color: var(--sec);
+}
+
+.off-canvas .menu a.active {
+    font-weight: 800;
+    background: white;
+}
+
+.off-canvas .vertical a i {
+    font-size: 1rem;
+    vertical-align: text-top;
+    margin-right: .5rem;
+    opacity: .7;
+}
+
+.off-canvas .vertical a.active i {
+    opacity: 1;
+}
+
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-family: var(--body);
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    transition: all .6s ease;
+    background-color: var(--fou);
+}
+
+    .nav-top { 
+     max-width: 77rem;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.0);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.0);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.0);
+    }
+    .nav-move {
+        max-width: 100%;
+        -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    }
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem ;
+        background: white;
+    } 
+}
+
+
+header .logo-radio-tsinaka {
+    width: 85px;
+    margin: auto;
+    display: none;
+}
+
+    @media (min-width: 768px) {
+        header .logo-radio-tsinaka {
+            display: block;
+            margin: 0 1rem;
+        }    
+    }
+
+ /* herramientas versión escritorio */
+
+    header .menu-all-tools-desktop {
+        display: none;
+    }
+
+    @media (min-width:768px) {
+        header .menu-all-tools-desktop {
+            display: initial;
+        }
+    }
+
+    /* versiones */
+    header .tools-desktop .version-web-desktop a {
+        color: black;
+        font-family: var(--btn);
+        font-size: .8rem;
+        margin: 0;
+        padding: .2rem 0;
+        text-transform: uppercase;
+    }
+
+        header .tools-desktop .version-web-desktop a i {
+            color: white;
+        }
+
+        header .tools-desktop .version-web-desktop a.active {
+            font-weight: 800;
+        }
+
+        header .tools-desktop .version-web-desktop a.active i {
+            color: var(--sec);
+        }
+
+        /* veriones */
+        header .tools-desktop .version-web-desktop a {
+            color: black;
+            font-family: var(--btn);
+            font-size: .8rem;
+            margin: 0;
+            padding: .2rem 0;
+            text-transform: uppercase;
+            transition: all .4s ease;
+        }
+
+        header .tools-desktop .version-web-desktop a:hover {
+           opacity: .5;
+
+        }
+    
+            header .tools-desktop .version-web-desktop a i {
+                color: white;
+            }
+    
+            header .tools-desktop .version-web-desktop a.active {
+                font-weight: 800;
+            }
+    
+            header .tools-desktop .version-web-desktop a.active i {
+                color: var(--sec);
+            }
+        
+            /* btn radio en vivo desktop */
+            header .btn-live {
+                cursor: pointer;
+                width: 100%;
+                transition: all .4s ease;
+
+            }
+
+            header .btn-live:hover {
+               opacity: .5;
+            }
+
+            header .btn-live .btn-live-content {
+                width: 200px;
+                margin: 0 1rem;
+            }
+
+            header .btn-live .btn-live-content :nth-child(1).btn-live_item {
+                width: 70%;
+                text-align: left;
+                padding: .5rem;
+            }
+
+            header .btn-live .btn-live-content :nth-child(1).btn-live_item h3 {
+                font-size: 1rem;
+                font-weight: 800;
+            }
+
+            header .btn-live .btn-live-content :nth-child(2).btn-live_item {
+                width: 30%;
+                background: var(--main);
+                color: white;
+                font-size: 2rem;
+                text-align: center;
+                padding-top: 0;
+            }
+
+            /* menú de redes sociales */
+            header .menu-contact-redes a {
+                color: black;
+                transition: all .4s ease;
+            }
+
+            header .menu-contact-redes a:hover {
+               opacity: .5;
+
+            }
+
+                header .menu-contact-redes .menu-contact_icons a {
+                    padding: 0 .5rem;
+                }
+
+                header .menu-contact-redes .menu-contact_icons i {
+                    font-size: 1.5rem;
+                }
+
+                header .menu-contact-redes .menu-contact_icons .link-wp {
+                    color: #00bfa5 ;
+                }
+
+                header .menu-contact-redes .link-tel {
+                    font-weight: bold;
+                    font-size: .9rem;
+                    margin-right: 0;
+                }
+            
+                /* Menú escritotio  */
+                header .menu-desktop-lg {
+                    font-size: .7rem;
+                    font-weight: 400;
+                }
+
+                header .menu-desktop-lg li:last-child {
+                    border: 1px solid var(--sec);
+                }
+
+                header .menu-desktop-lg li:last-child a{
+                    color: var(--sec);
+                }
+
+
+                @media (min-width:992px) {
+                    header .menu-desktop-lg {
+                        font-size: .9rem;
+                        margin-top: .5rem;
+                    }  
+                }
+
+
+                @media (min-width:1200px) {
+                    header .menu-desktop-lg {
+                        font-size: 1rem;
+                    }  
+                }
+
+                    header .menu-desktop-lg a {
+                        color: black;
+                        position: relative;
+                        transition: all .4s ease;
+                        padding: .5rem 1rem;
+        
+                    }
+
+                    header .menu-desktop-lg a:hover {
+                       opacity: .5;
+        
+                    }
+
+                    header .menu-desktop-lg a.active {
+                       font-weight: 800;
+        
+                    }
+
+                    header .menu-desktop-lg a.active:hover {
+                        cursor: default;
+                        opacity: 1;
+         
+                     }
+
+                    header .menu-desktop-lg a.active::after{
+                        content: '';
+                       
+                        position: absolute;
+                        width: 3rem;
+                        height: .3rem;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+         
+                     }
+
+.version-web {
+    /* background-color: var(--fou); */
+    display: flex;
+    font-size: .7rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    justify-content: flex-end;
+}
+.version-web .fa-search {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+@media(min-width:768px){
+    .version-web {
+      display: none;
+    }
+  }
+
+.version-web i {
+    color: var(--sec);
+}
+
+.version-web p, .version-web a {
+    padding: 0 .3rem;
+}
+.version-web p {
+    margin-bottom: 0;
+}
+
+.version-web a {
+    color: black;
+}
+    .version-web a.active {
+        color: black;
+        font-weight: bold;
+    }

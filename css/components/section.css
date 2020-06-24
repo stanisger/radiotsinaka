@@ -1,0 +1,138 @@
+/* Hoja de estilos para sección de home
+1- Estilos generales del contenedor
+2- Título 
+3- Botón de sección */
+
+/* -1- */
+section.home {
+    padding: 3rem 1rem 1rem;
+    position: relative;
+}
+
+    @media (min-width: 768px) {
+        section.home {
+            padding: 5rem 1rem 5rem;
+            position: relative;
+        }   
+    }
+
+    @media (min-width: 1024px) {
+        section.home {
+            padding: 6rem 1rem 4rem;
+            position: relative;
+        }   
+    }
+
+
+/* 2-*/
+section.blog-tsinaka.home .content-text .title.-seccion,
+section.programas-home.home .content-text .title.-seccion,
+section.series-home.home .content-text .title.-seccion,
+section.apoyo-home.home .content-text .title.-seccion {
+    color: black;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    section.blog-tsinaka.home .content-text .title.-seccion,
+    section.programas-home.home .content-text .title.-seccion,
+    section.series-home.home .content-text .title.-seccion,
+    section.apoyo-home.home .content-text .title.-seccion {
+        color: black;
+        font-size: 1.7rem;
+        margin: 0;
+        line-height: 1.7rem;
+    } 
+}
+
+    section.blog-tsinaka.home .content-text :nth-child(1).title,
+    section.programas-home.home .content-text :nth-child(1).title,
+    section.series-home.home .content-text :nth-child(1).title {
+        font-weight: 700;
+    }
+
+    section.blog-tsinaka.home .content-text :nth-child(2).title {
+        font-weight: initial;
+    }
+
+/* 3-*/
+.btn-link-all {
+    color: var(--sec);
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    right: 1rem;
+    position: absolute;
+    transition: all .4s ease;
+    z-index: 1;
+}
+
+.btn-link-all i {
+    color: var(--sec);
+}
+
+    .btn-link-all:hover {
+        color: var(--sec);  
+        opacity: .5;
+    }
+    
+    .btn-link-all  i {
+        vertical-align: middle;
+    }
+
+        @media (min-width: 768px) {
+            .btn-link-all {
+                font-size: .7rem;
+            }
+        }
+
+            @media (min-width: 1024px) {
+                .btn-link-all {
+                    font-size: .9rem;
+                    right: 2rem;
+                    top: 8rem;
+                }
+            }
+
+
+
+            /* 3-*/
+.btn-link-all_title {
+    color: var(--sec);
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    right: 1rem;
+    position: absolute;
+    transition: all .4s ease;
+    z-index: 1;
+}
+
+.btn-link-all_title i {
+    color: var(--sec);
+}
+
+    .btn-link-all_title:hover {
+        color: var(--sec);  
+        opacity: .5;
+    }
+    
+    .btn-link-all_title  i {
+        vertical-align: middle;
+    }
+
+        @media (min-width: 768px) {
+            .btn-link-all_title {
+                font-size: .7rem;
+            }
+        }
+
+            @media (min-width: 1024px) {
+                .btn-link-all_title {
+                    font-size: .9rem;
+                    right: 0;
+                    top: 2.2rem;
+                }
+            }

@@ -1,0 +1,48 @@
+/* Hoja de estilos para sección de home
+1- Estilos generales del contenedor
+2- Título 
+3- Botón de sección */
+
+/* -1- */
+section.in {
+    padding: 1rem 1rem 1rem;
+    position: relative;
+    max-width: 75rem;
+    margin: auto;
+}
+
+    @media (min-width: 768px) {
+        section.in {
+            padding: 3rem 1rem 5rem;
+            position: relative;
+        }   
+    }
+
+    @media (min-width: 1024px) {
+        section.in {
+            position: relative;
+        }   
+    }
+
+    audio {
+        margin-top: 1rem;
+        width: 100%;
+        -webkit-transition:all 0.5s linear;
+        -moz-transition:all 0.5s linear;
+        -o-transition:all 0.5s linear;
+        transition:all 0.5s linear;
+        background-color :#f1f3f4;
+        -moz-border-radius:0;
+        -webkit-border-radius:0;
+        border-radius:0;
+        }
+
+
+    audio:hover, audio:focus, audio:active {
+        -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+    }

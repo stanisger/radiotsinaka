@@ -1,0 +1,17 @@
+@import "variables.css";
+@import "structur.css";
+
+@import "./libs/owl.carousel.min.css";
+
+@import "./components/text.css";
+@import "./components/header.css";
+@import "./components/tools-mobile.css";
+@import "./components/blog.css";
+@import "./components/programas.css";
+@import "./components/eyecatcher.css";
+@import "./components/series.css";
+@import "./components/section.css";
+@import "./components/apoyo.css";
+@import "./components/multimedia.css";
+@import "./components/content-in-series.css";
+@import "./components/footer.css";

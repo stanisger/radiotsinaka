@@ -1,0 +1,204 @@
+/* Hoja de estilos para el blog y la seeción del blog en el inicio
+1- Extracto de nota
+    1.1 Contenedor de notas
+    1.2- Carrusel
+    1.4- Título del programa
+    1.5- Botón nota completa
+
+2- Detalle de la nota
+    1.1- Imagen
+    1.2- Pié de imagen
+    1.3- Contenedor de texto
+    1.4- Título de l nota
+    1.5- Botón nota completa */
+
+
+/* 1- Extrácto de nota */
+.series-home {
+    display: flex; 
+    flex-direction: column;
+    padding: 0 1rem;
+ }
+
+ .series-home .owl-carousel {
+    margin: auto; 
+    max-width: 320px;
+ }
+
+    @media (min-width: 768px) {
+        .series-home .owl-carousel {
+            margin: auto; 
+            max-width: 75rem;
+        }   
+    }
+
+/* título de sección */
+.series-tsinaka_item {
+    margin: 0 auto 2rem;
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+}
+
+    @media (min-width: 768px) {
+        
+        .series-tsinaka_item {
+            margin: 0 auto 2rem;
+            max-width: 75rem;
+            position: relative;
+            width: 100%;
+        }
+
+        .series-home .owl-carousel {
+            margin: auto;
+            max-width: 75rem;
+        }
+    }
+    
+ /* 1.2- Carrusel */
+ .series-home .owl-carousel .item {
+     background-size: cover;
+     height: 200px;
+     position: relative;
+     cursor: pointer;
+     background-position: center;
+     transition: all .4s ease;
+     
+ }
+
+    .series-home .owl-carousel .item:hover {
+        -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.862);
+        -moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0, 0.862);
+        box-shadow: 0px 1px 12px 0px rgba(0,0,0, 0.862);
+        filter: saturate(0);
+        }
+
+    @media (min-width: 768px) {
+        .series-home .owl-carousel .item {
+            height: 225px;
+        }   
+    }
+    
+    
+        @media (min-width: 1024px) {
+            .series-home .owl-carousel .item {
+                height: 340px;
+            }   
+        }
+ 
+ 
+     /* controles de  carrusel */
+     .series-home .owl-carousel .owl-nav {
+         display: inherit;
+         text-align: center;
+         margin: 2rem 0 0;
+     }
+
+     @media (min-width: 1024px) {
+        .series-home .owl-carousel .owl-nav {
+            position:  absolute;
+            width: 100%;
+            top: 30%;
+        }
+    }
+ 
+     .series-home  .owl-carousel .owl-nav span {
+         display: none;
+         }
+ 
+         .series-home .owl-carousel .owl-nav .owl-prev,
+         .series-home .owl-carousel .owl-nav .owl-next {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: var(--sec);
+            margin: 0 .5rem;
+            transition: all .4s ease;
+            background-image: url(../../assets/img/multimedia-option.png);
+            background-position: center;
+            background-size: 1rem;
+            background-repeat: no-repeat;
+            -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.81);
+            -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.81);
+            box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.81);
+ 
+         }
+ 
+         .series-home .owl-carousel .owl-nav .owl-next {
+             transform: rotate(180deg);
+         }
+ 
+         .series-home  .owl-carousel .owl-prev:hover,
+         .series-home  .owl-carousel .owl-next:hover {
+             opacity: .5;
+         }
+
+         @media (min-width: 1024px) { 
+            .series-home .owl-carousel .owl-nav .owl-prev,
+            .series-home .owl-carousel .owl-nav .owl-next {
+                background-size: 1.3rem;
+                position: absolute;
+                border-radius: 0;
+                height: 4rem;
+            }
+            .series-home .owl-carousel .owl-nav .owl-next {
+                right: -1.2rem;
+            }  
+            .series-home .owl-carousel .owl-nav .owl-prev {
+                left: -1.2rem;
+            }  
+        }
+ 
+ /* 1.2.1- Carrusel texto*/
+ .series-home .owl-carousel .item .content-text {
+    padding: 2.5rem 1rem 0;
+    text-align: center;
+ }
+ 
+     .series-home .owl-carousel .item .content-text .category {
+         font-size: .6rem;
+         font-weight: 900;
+     }
+ 
+     .series-home .owl-carousel .item .content-text .title {
+         font-size: 2.5rem;
+         line-height: 2.2rem;
+     }
+
+     @media (min-width: 768px) {
+        .series-home .owl-carousel .item .content-text .category {
+            font-size: .9rem;
+            font-weight: 900;
+        } 
+    }
+ 
+ 
+     /* 1.5- Botón nota completa*/
+     .series-home .btn {
+         bottom: 0;
+         background-color: var(--sec);
+         width: 2rem;
+         height: 2rem;
+         right: 0;
+         position: absolute;
+         text-align: center;
+     }
+ 
+     .series-home .btn a {
+         height: 1.7rem;
+         width: 1.7rem;
+         display: block;
+         padding-top: .1rem;
+         transition: all .4s ease;
+     }
+ 
+         .series-home .btn a:hover {
+             opacity: .5;
+         }
+ 
+         .series-home .btn  i {
+             color: white;
+         }
+ 
+ 
+ 

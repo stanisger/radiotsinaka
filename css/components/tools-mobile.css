@@ -1,0 +1,95 @@
+
+/*
+Hoja de estilos para herramientas de radio en versión mobil
+1- Contenedor de las herramientas.
+2- Botón activador para ventana de tadio en vivo versión mobil.
+3- Botón activador para menu.
+*/
+
+/* 1- Contenedor de las herramientas */
+.tools-mobile {
+  -webkit-box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.71);
+  -moz-box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.71);
+  box-shadow: 1px 0px 6px 0px rgba(0,0,0,0.71);
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+@media(min-width:768px){
+  .tools-mobile {
+    display: none;
+  }
+}
+
+/* 2- Botón acti... */
+.btn-live {
+  width: 100%;
+}
+
+  .btn-live .btn-live-content {
+    display: flex;
+  }
+
+    .btn-live .btn-live-content :nth-child(1).btn-live_item {
+      background: url(../../assets/img/bg-greca.jpg);
+      background-size: cover;
+      color: white;
+      padding: .7rem 0 0.3rem;
+      text-align: center;
+      width: 60%;
+    }
+
+    .btn-live .btn-live-content h3 {
+      font-size: 1rem;
+      margin-bottom: 0;
+      line-height: 1rem;
+    }
+
+    .btn-live .btn-live-content :nth-child(2).btn-live_item {
+      width: 20%;
+      background: var(--sec);
+      color: white;
+      font-size: 2rem;
+      text-align: center;
+      padding-top: .3rem;
+  }
+
+  .btn-live .btn-live-content :nth-child(3).btn-live_item {
+    width: 20%;
+    background: #00bfa5;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: .3rem;
+}
+
+/* 3- Botón activador para menu */
+.btn-menu-mobile {
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: .25rem 0 ;
+  text-align: center;
+}
+
+.btn-menu-mobile:hover i {
+  opacity: .5;
+}
+
+.btn-menu-mobile  i {
+  color: var(--sec);
+}
+.btn-menu-mobile small {
+
+  line-height: 1px;
+  font-size: .5rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .btn-menu-mobile {
+    display: none;
+  }
+}

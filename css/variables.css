@@ -1,0 +1,41 @@
+:root {
+	font-size: 16px;
+  --main: #205882;
+  --sec: #352861;
+  --ter: #f1f1f1;
+  --fou: #dfdce8;
+  --alert: #f6c727;
+
+ 
+  --title: 'Open Sans', sans-serif;
+  --body: 'Open Sans', sans-serif;
+  --btns: 'Roboto', sans-serif;
+}
+
+.bg-main {
+  background-color: var(--main) !important;
+}
+
+.c-main {
+  color: var(--main) !important;
+}
+
+.c-sec {
+  color: var(--sec) !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.c-white {
+  color: white !important;
+}
+
+.bg-ter {
+  background-color: var(--ter);
+}
+
+.bg-fou {
+  background-color: var(--fou);
+}

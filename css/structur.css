@@ -1,0 +1,52 @@
+
+*:focus {
+    outline: none !important;
+}
+
+h1, h2, h3 {
+    font-family: var(--title);
+    font-weight: 700;
+}
+
+
+figure {
+    margin: 0;
+}
+
+/* helpers */
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.saturation {
+    cursor: pointer;
+    filter: saturate(1);
+    transition: all .4s ease;
+}
+.saturation:hover {
+    filter: saturate(0);
+}
+
+.pagination .current {
+    padding: .1875rem .625rem;
+    background: var(--sec);
+    color: #fefefe;
+    cursor: default;
+}
+
+.p-relative {
+    position: relative;
+}

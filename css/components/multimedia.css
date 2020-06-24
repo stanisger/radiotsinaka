@@ -1,0 +1,53 @@
+/* Hoja de estilos para el blog y la seeción del blog en el inicio
+1- Extracto de nota
+    1.1 Contenedor de notas
+    1.2- Carrusel
+
+/* 1- Extrácto de nota */
+.multimedia-home {
+    display: flex; 
+    flex-direction: column;
+    max-width: 360px;
+    margin: auto;
+    padding: 0 1rem;
+ }
+
+    @media (min-width: 768px) {
+            .multimedia-home {
+                max-width: 75rem;
+            }
+        }
+
+ .multimedia-home .title-section-img img {
+    width: 80px;
+}
+
+@media (min-width: 768px) {
+
+    .multimedia-home .title-section-img img {
+        width: 120px;
+    }
+}
+
+.multimedia-home .content-video {
+    position: relative;
+}
+
+.multimedia-home .content-video  iframe {
+    width: 100%;
+    height: 180px;
+    margin-top: 1.5rem;
+}
+
+    @media (min-width: 768px) {
+
+        .multimedia-home .content-video  iframe {
+            height: 440px;
+        }
+    }
+
+
+.multimedia-home .content-video .btn-link-all {
+    top: 1rem;
+    right: 0;
+}

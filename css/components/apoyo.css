@@ -1,0 +1,170 @@
+/* Hoja de estilos para los programas de apoyo
+1- Extracto de aposyo en inicio
+    1.1 Contenedor de sección
+    1.2- Carrusel
+    1.4- Título del programa
+    1.5- Botón nota completa
+
+2- Detalle de la nota
+    1.1- Imagen
+    1.2- Pié de imagen
+    1.3- Contenedor de texto
+    1.4- Título de l nota
+    1.5- Botón nota completa */
+
+
+/* 1.1 Contenedor de sección */
+
+.apoyo-home .grid-x {
+    max-width: 320px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+        .apoyo-home .grid-x {
+            max-width: 75rem;
+            padding: 0 1rem;
+        }
+    }
+
+.apoyo-home .grid-x {
+    max-width: 320px;
+    margin: auto;
+}
+
+
+    @media (min-width: 768px) {
+        .apoyo-home .grid-x {
+            max-width: 77.5rem;
+            margin: 1.5rem auto 2rem;
+        }
+    }
+
+    .apoyo-home .grid-x .cell:nth-child(1),
+    .apoyo-home .grid-x .cell:nth-child(2) {
+        margin-bottom: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .apoyo-home .grid-x .cell:nth-child(1),
+        .apoyo-home .grid-x .cell:nth-child(2) {
+            margin-bottom: 0;
+        }  
+    }
+
+    .apoyo-home .grid-x .cell:nth-child(1) .pleca {
+        background-image: url(../../assets/img/bg-greca.jpg);
+
+    }
+
+    .apoyo-home .grid-x .cell:nth-child(2) .pleca {
+        background-image: url(../../assets/img/bg-greca-2.jpg);
+    }
+
+    .apoyo-home .grid-x .cell:nth-child(3) .pleca {
+        background-image: url(../../assets/img/bg-greca-3.jpg);
+    }
+
+.apoyo-tsinaka_item {
+    max-width: 320px;
+    margin: auto;
+    padding: 0 0 1.5rem;
+}
+
+    @media (min-width: 768px) {
+        .apoyo-tsinaka_item {
+            max-width: 75rem;
+            padding: 0 1rem 1.5rem;
+        }
+    }
+
+    .apoyo-home .cell {
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+
+    .apoyo-home .cell:hover {
+        -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.862);
+        -moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0, 0.862);
+        box-shadow: 0px 1px 12px 0px rgba(0,0,0, 0.862);
+        filter: saturate(0);
+        
+    }
+
+.apoyo-home .content-banner {
+    padding: 1rem 1rem 2.5rem;
+    position: relative;
+    transition: all .4s ease;
+}
+
+
+    @media (min-width: 768px) {
+        .apoyo-home .content-banner {
+            padding: 1.5rem 1.5rem 3.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .apoyo-home .content-banner {
+            padding: 2.5rem 2.5rem 4.5rem;
+            position: relative;
+            min-height: 300px;
+        }
+    }
+
+    .content-banner .title {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        .content-banner .title {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+    }
+
+.apoyo-home .pleca {
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+    @media (min-width: 1024px) {
+        .apoyo-home .pleca {
+            height: 2rem;
+        }
+    }
+
+ 
+/* 1.5- Botón nota completa*/
+.apoyo-home .btn {
+    background-color: var(--sec);
+    width: 1.7rem;
+    height: 1.7rem;
+    right: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.apoyo-home .btn a {
+    height: 1.7rem;
+    width: 1.7rem;
+    display: block;
+    padding-top: .1rem;
+    transition: all .4s ease;
+}
+
+    .apoyo-home .btn a:hover {
+        opacity: .5;
+    }
+
+    .apoyo-home .btn  i {
+        color: white;
+    }
+
