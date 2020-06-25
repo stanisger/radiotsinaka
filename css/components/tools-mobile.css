@@ -34,7 +34,7 @@ Hoja de estilos para herramientas de radio en versión mobil
   }
 
     .btn-live .btn-live-content :nth-child(1).btn-live_item {
-      background: url(../../assets/img/bg-greca.jpg);
+      background: black;
       background-size: cover;
       color: white;
       padding: .7rem 0 0.3rem;
@@ -42,24 +42,32 @@ Hoja de estilos para herramientas de radio en versión mobil
       width: 60%;
     }
 
+    @media (min-width:768px){
+      .btn-live .btn-live-content :nth-child(1).btn-live_item {
+        background: url(../../assets/img/bg-greca.jpg);
+      }
+    }
+
     .btn-live .btn-live-content h3 {
-      font-size: 1rem;
+      font-size: .9rem;
       margin-bottom: 0;
       line-height: 1rem;
+      margin-left: 2rem;
     }
 
     .btn-live .btn-live-content :nth-child(2).btn-live_item {
       width: 20%;
-      background: var(--sec);
+      background: black;
       color: white;
       font-size: 2rem;
       text-align: center;
       padding-top: .3rem;
+      text-align: left;
   }
 
   .btn-live .btn-live-content :nth-child(3).btn-live_item {
     width: 20%;
-    background: #00bfa5;
+    background :#00ff7e;
     color: white;
     font-size: 2rem;
     text-align: center;
@@ -79,7 +87,7 @@ Hoja de estilos para herramientas de radio en versión mobil
 }
 
 .btn-menu-mobile  i {
-  color: var(--sec);
+  color: white;
 }
 .btn-menu-mobile small {
 

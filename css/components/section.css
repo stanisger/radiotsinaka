@@ -11,14 +11,14 @@ section.home {
 
     @media (min-width: 768px) {
         section.home {
-            padding: 5rem 1rem 5rem;
+            padding: 3rem 1rem 5rem;
             position: relative;
         }   
     }
 
     @media (min-width: 1024px) {
         section.home {
-            padding: 4rem 1rem 4rem;
+            padding: 3rem 1rem 4rem;
             position: relative;
         }   
     }
@@ -61,7 +61,7 @@ section.multimedia-home.home .content-text .title.-seccion {
 
 /* 3-*/
 .btn-link-all {
-    color: var(--sec);
+    color: black;
     font-weight: 600;
     font-size: .8rem;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ section.multimedia-home.home .content-text .title.-seccion {
                 .btn-link-all {
                     font-size: .9rem;
                     right: 2rem;
-                    top: 7rem;
+                    top: 5rem;
                 }
             }
 
@@ -102,13 +102,14 @@ section.multimedia-home.home .content-text .title.-seccion {
 
             /* 3-*/
 .btn-link-all_title {
-    color: var(--sec);
+    color: black;
     font-weight: 600;
     font-size: .8rem;
     text-transform: uppercase;
     right: 1rem;
     position: absolute;
     transition: all .4s ease;
+    top: 1.3rem;
     z-index: 1;
 }
 

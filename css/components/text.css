@@ -28,7 +28,7 @@
 
     /* 2- Título. */
     .content-text .title {
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .content-text .title.-bold {
@@ -116,7 +116,7 @@
             
     /* 3- Links. */
     .content-text a {
-        color: var(--sec);
+        color: black;
         text-decoration: underline;
         transition: all .4s ease;
     }
@@ -192,3 +192,6 @@
                     letter-spacing: -2px;
                 }
             }
+.bold {
+    font-weight: 700 !important;
+}

@@ -8,6 +8,9 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+body {
+    background: #f9f9f9;
+}
 
 figure {
     margin: 0;
@@ -48,4 +51,18 @@ figure {
 
 .p-relative {
     position: relative;
+}
+
+hr {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    border-bottom: 1px solid black;
+}
+
+@media (min-width:768px){
+    hr {
+        max-width: 75rem;
+        border-bottom: 3px solid black;
+    }  
 }

@@ -21,7 +21,7 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
    
     @media (min-width: 768px) {
         .eyecatcher {
-            margin-top: 9rem;
+            margin-top: 8.5rem;
             background-color: var(--main);
         }
     }
@@ -196,9 +196,10 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
     .owl-carousel-eye .item .content-text .title {
         font-size: 1.5rem;
         letter-spacing: -.07rem;
-        color: var(--sec);
+        color: black;
         line-height: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: .1rem;
+        font-weight: 600;
     }
 
     .owl-carousel-eye .item .content-text .category {
@@ -208,6 +209,7 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
         @media (min-width: 620px) {
             .owl-carousel-eye .item .content-text .title {
                 font-size: 2rem;
+                font-weight: 700;
             }
         }
 
@@ -237,7 +239,7 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
     .owl-carousel-eye .item .content-text a {
         font-size: .8rem;
         text-decoration: none;
-        color: var(--sec);
+        color: black;
         margin-top: 1rem;
         display: block;
         font-weight: 600;
