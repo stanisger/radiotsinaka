@@ -12,7 +12,7 @@
 </head>
 <body>
 
-
+  <!-- Menú versión móbile -->
   <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
     <ul class="vertical menu">
       <li><a class="active" href="#"><i class="fas fa-home"></i>Inicio</a></li>
@@ -31,13 +31,11 @@
     </ul>
   </div>
 
-  <!-- Empieza el código del sitio-->
+  <!--///// Empieza el código del sitio ////-->
   <div class="off-canvas-content" data-off-canvas-content>
 
-     
-     <!-- Herramientas versión móvil -->
+    <!--// Herramientas versión móvil: radio en vivo y btn whatsApp //-->
     <div class="tools-mobile">
-  
         <div class="btn-live">
             <div class="btn-live-content">
                 <div class="btn-live_item">
@@ -54,12 +52,11 @@
         </div>
     </div>
 
-    <!-- Cabercera de sitio -->
+    <!--// Cabercera de sitio //-->
     <header class="header nav-top">
-
         <div class="grid-x">
 
-          
+          <!-- Botón de menú -->
           <div class="cell small-2">
             <div class="btn-menu-mobile" type="button" data-toggle="offCanvas">
               <i class="fas fa-bars"></i>
@@ -70,87 +67,91 @@
           <div class="cell small-10">
             <div class="version-web ">
               
-              <a href="" class="active">
-                ESP
-              </a>
-              <a href="">NÁHU</a>
+              <!-- idioma -->
+              <a href="" class="active">ESP</a>
+              <a href="">NÁH</a>
              
+              <!-- buscador -->
               <i data-toggle="example-dropdown-bottom-right" class="fas fa-search"></i>
-<div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-close-on-click="true">
- <input type="text">
-</div>
+              <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-close-on-click="true">
+                <input type="text" placeholder="Buscar">
+              </div>
+
             </div>
           </div>
 
-            <!-- logotipo -->
-            <div class="cell medium-2 large-3">
-                <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
-            </div>
+          <!-- logotipo -->
+          <div class="cell medium-2 large-3">
+              <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
+          </div>
 
-           <!-- menú versión escritorio -->
-            <div class="menu-all-tools-desktop cell medium-10 large-9">
-              
-              <!-- Herramientas versión escritorio -->
-              <ul class="menu align-right tools-desktop">
-                <li>
-                  <div class="version-web-desktop">
-                    <a href="" class="active">
-                        <i class="fas fa-chevron-right"></i>    
-                        Versión Español
-                    </a>
-                    <a href="">
-                      <i class="fas fa-chevron-right"></i>   
-                        Versión Náhuatl</a>
+          <!-- menú versión escritorio -->
+          <div class="menu-all-tools-desktop cell medium-10 large-9">
+            
+            <!-- Herramientas versión escritorio -->
+            <ul class="menu align-right tools-desktop">
+              <li>
+                <div class="version-web-desktop">
+                  <a href="" class="active">
+                      <i class="fas fa-chevron-right"></i>    
+                      Versión Español
+                  </a>
+                  <a href="">
+                    <i class="fas fa-chevron-right"></i>   
+                      Versión Náhuatl</a>
+              </div>
+              </li>
+              <li>
+                <div class="btn-live">
+                  <div class="btn-live-content">
+                      <div class="btn-live_item">
+                          <h3>RADIO<br>EN VIVO</h3>
+                      </div>
+                      <div class="btn-live_item">
+                          <i class="fas fa-play-circle"></i>
+                      </div>
+
+                  </div>
+              </div>
+              </li> 
+
+              <!-- menu de redes sociales y teléfono -->
+              <li class="flex-column menu-contact-redes">
+                <ul class="menu menu-contact_icons">
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="link-wp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                  <a class="link-tel" href="">TEL: 233 111 63 68</a>
+              </li>
+            </ul>
+            
+
+            <ul class="menu align-right menu-desktop-lg">
+              <li><a class="active" href="#">INICIO</a></li>
+              <li><a href="#">NOTICIERO</a></li>
+              <li><a href="#">PROGRAMACIÓN</a></li>
+              <li><a href="#">PRODUCCIONES</a></li>
+              <li><a href="#">CONTACTO</a></li>
+              <li><a href="#">APÓYANOS</a></li>
+              <li data-toggle="example-dropdown-bottom-right-dektop"><a><i class="fas fa-search" ></i></a></li>
+            </ul>
+                <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right-dektop" data-dropdown data-close-on-click="true">
+                  <input type="text" placeholder="Buscar">
+                  <i class="fas fa-times-circle c-white" id="close-s"></i>
                 </div>
-                </li>
-                <li>
-                  <div class="btn-live">
-                    <div class="btn-live-content">
-                        <div class="btn-live_item">
-                            <h3>RADIO<br>EN VIVO</h3>
-                        </div>
-                        <div class="btn-live_item">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-        
-                    </div>
-                </div>
-                </li> 
-
-                <!-- menu de redes sociales y teléfono -->
-                <li class="flex-column menu-contact-redes">
-                  <ul class="menu menu-contact_icons">
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="link-wp" href="#"><i class="fab fa-whatsapp"></i></a></li>
-                  </ul>
-                   <a class="link-tel" href="">TEL: 233 111 63 68</a>
-                </li>
-              </ul>
-              
-
-              <ul class="menu align-right menu-desktop-lg">
-                <li><a class="active" href="#">INICIO</a></li>
-                <li><a href="#">NOTICIERO</a></li>
-                <li><a href="#">PROGRAMACIÓN</a></li>
-                <li><a href="#">PRODUCCIONES</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="#">APÓYANOS</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-              </ul>
-            </div>
+          </div>
          
         </div>
-     
     </header>
 
-    <!-- logotipo en versión móbile--> 
+    <!--// Logotipo en versión móbile //--> 
     <div class="mobil-logo">
       <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
     </div>
 
-    <!-- Carrusel principal "eyecatcher" -->
+    <!--// Carrusel principal "eyecatcher" //-->
     <section class="eyecatcher">
       <div class="owl-carousel owl-carousel-eye">
         <div class="item">
@@ -163,7 +164,12 @@
             </div>
           </article>
           <article class="content-elements">
-            <figure data-interchange="[./assets/img/eye1.jpg, small]"></figure>
+            <figure data-interchange="[./assets/img/eye1.jpg, small]">
+              <audio class="in-extract" controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio></figure>
           </article>
         </div>
         <div class="item">
@@ -182,7 +188,7 @@
       </div>
     </section>
      
-    <!-- Extracto de noticias -->
+    <!--// Extracto de noticias //-->
     <section class="blog-tsinaka home">
       
       <a class="btn-link-all" href="#">ver todo <i class="fas fa-chevron-right"></i> </a>
@@ -196,7 +202,11 @@
       <article class="blog-tsinaka_item bg-ter">
           <div class="content-news">
               <figure class="content-news-img" data-interchange="[./assets/img/blog/img1.jpg, small]">
-        
+                <audio class="in-extract" controls>
+                  <source src="horse.ogg" type="audio/ogg">
+                  <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
               </figure>
               <div class="content-text -news">
                 <ul class="menu share-blog">
@@ -217,7 +227,13 @@
       </article>
       <article class="blog-tsinaka_item bg-ter">
         <div class="content-news">
-            <figure class="content-news-img" data-interchange="[./assets/img/blog/img.jpg, small]"> </figure>
+            <figure class="content-news-img" data-interchange="[./assets/img/blog/img.jpg, small]">
+              <audio class="in-extract" controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            </figure>
             <div class="content-text -news">
 
               <ul class="menu share-blog">
@@ -260,7 +276,7 @@
 
     </section>
 
-    <!-- Extracto de programas radiofónicos -->
+    <!--// Extracto de programas radiofónicos //-->
     <section class="programas-home home bg-ter" >
        
       <article class="programas-tsinaka_item">
@@ -339,154 +355,198 @@
 
     </section>
 
-    <!-- Extracto de series radiofónicas -->
+    <!--// Extracto de series radiofónicas //-->
     <section class="series-home home" >
        
      
+      <!-- Cabecera de Sección -->
       <article class="series-tsinaka_item">
-         <a class="btn-link-all_title" href="#">
-          VER TODO
-          <i class="fas fa-chevron-right"></i> 
-        </a>
+
+        <!--btn-->
+        <a class="btn-link-all_title" href="#">VER TODO<i class="fas fa-chevron-right"></i></a>
+
+        <!-- título -->
         <div class="content-text title-section">
           <h2 class="title -seccion">Series</h2>
           <h2 class="title -seccion">Radiofónicas</h2>
         </div>
-     </article>
 
-     <div class="owl-carousel owl-carousel-series">
-      
-      <div class="item" data-interchange="[./assets/img/series/img3.jpg, small]">
-        <div class="content-text -extract-home c-sec">
-        
-          <!-- <h2 class="title">El saber de mi pueblo</h2> -->
+      </article>
+
+      <!-- Carrusel -->
+      <div class="owl-carousel owl-carousel-series">
+
+        <!-- item carrusel -->
+        <div class="item" data-interchange="[./assets/img/series/img3.jpg, small]">
+          <div class="btn">
+            <a href="">
+              <i class="fas fa-chevron-right"></i>   
+            </a>
+          </div>
         </div>
-        <div class="btn">
-          <a href="">
-            <i class="fas fa-chevron-right"></i>   
-          </a>
+
+        <!-- item carrusel -->
+        <div class="item"  data-interchange="[./assets/img/series/img2.jpg, small]">
+          <div class="btn">
+            <a href="">
+              <i class="fas fa-chevron-right"></i>   
+            </a>
+          </div>
         </div>
+
       </div>
-
-      <div class="item"  data-interchange="[./assets/img/series/img2.jpg, small]">
-        <div class="content-text -extract-home c-white">
-         <small class="category"> RADIO REVISTA</small>
-          <!--  <h2 class="title">Semillas en resistencia</h2> -->
-        </div>
-        <div class="btn">
-          <a href="">
-            <i class="fas fa-chevron-right"></i>   
-          </a>
-        </div>
-      </div>
-
-    </div>
 
     </section>
 
     <!-- Extracto de programas de apoyo -->
     <section class="apoyo-home home bg-fou">
+
+        <!-- Cabecera sección -->
         <article class="apoyo-tsinaka_item">
           <div class="content-text title-section text-center">
             <h2 class="title -seccion">Apoyanos</h2>
           </div>
-      </article>
+        </article>
 
-      <!-- banners -->
-      <div class="grid-x grid-margin-x ">
+        <!-- banners -->
+        <div class="grid-x grid-margin-x ">
 
-        <!-- banner -->
-        <div class="cell large-6">
-          <div class="content-banner bg-white">
+          <!-- banner -->
+          <div class="cell large-6">
+            <div class="content-banner bg-white">
 
-            <!-- texto -->
-            <div class="content-text -extract-home c-sec">
-              <h2 class="title">¡Unete al Club Tsinaka!</h2>
-              <p>Como una radio comunitaria no recibe financiamiento del gobierno, partidos políticos ni anuncios comerciales, su principal fuente de financiamiento es el pueblo mismo.</p>              
+              <!-- texto -->
+              <div class="content-text -extract-home c-sec">
+                <h2 class="title">¡Unete al Club Tsinaka!</h2>
+                <p>Como una radio comunitaria no recibe financiamiento del gobierno, partidos políticos ni anuncios comerciales, su principal fuente de financiamiento es el pueblo mismo.</p>              
+              </div>
+
+              <!-- botón -->
+              <div class="btn">
+                <a href="">
+                  <i class="fas fa-chevron-right"></i>   
+                </a>
+              </div>
+              <div class="pleca"></div>
+
             </div>
+          </div>
 
-            <!-- botón -->
-            <div class="btn">
-              <a href="">
-                <i class="fas fa-chevron-right"></i>   
-              </a>
+          <!-- banner -->
+          <div class="cell large-3">
+            <div class="content-banner bg-white">
+
+              <!-- texto -->
+              <div class="content-text -extract-home c-sec">
+                <h2 class="title">Venta con causa</h2>
+                <p> <strong>Consigue articulos de radio tsinaka</strong>  <br> o
+                  Adquiere una de las 4 libretas con diseños único</p>              
+              </div>
+
+              <!-- botón -->
+              <div class="btn">
+                <a href="">
+                  <i class="fas fa-chevron-right"></i>   
+                </a>
+              </div>
+              <div class="pleca"></div>
+
             </div>
-            <div class="pleca"></div>
+          </div>
 
+          <!-- banner -->
+          <div class="cell large-3">
+            <div class="content-banner bg-white">
+
+              <!-- texto -->
+              <div class="content-text -extract-home c-sec">
+                <h2 class="title">Donaciónes</h2>
+                <p> <strong>Consigue articulos de radio tsinaka</strong>  <br> o
+                  Adquiere una de las 4 libretas con diseños único</p>              
+              </div>
+
+              <!-- botón -->
+              <div class="btn">
+                <a href="">
+                  <i class="fas fa-chevron-right"></i>   
+                </a>
+              </div>
+              <div class="pleca"></div>
+
+            </div>
           </div>
         </div>
-        <!-- banner -->
-        <div class="cell large-3">
-          <div class="content-banner bg-white">
 
-            <!-- texto -->
-            <div class="content-text -extract-home c-sec">
-              <h2 class="title">Venta con causa</h2>
-              <p> <strong>Consigue articulos de radio tsinaka</strong>  <br> o
-                Adquiere una de las 4 libretas con diseños único</p>              
-            </div>
-
-            <!-- botón -->
-            <div class="btn">
-              <a href="">
-                <i class="fas fa-chevron-right"></i>   
-              </a>
-            </div>
-            <div class="pleca"></div>
-
-          </div>
-        </div>
-        <!-- banner -->
-        <div class="cell large-3">
-          <div class="content-banner bg-white">
-
-            <!-- texto -->
-            <div class="content-text -extract-home c-sec">
-              <h2 class="title">Donaciónes</h2>
-              <p> <strong>Consigue articulos de radio tsinaka</strong>  <br> o
-                Adquiere una de las 4 libretas con diseños único</p>              
-            </div>
-
-            <!-- botón -->
-            <div class="btn">
-              <a href="">
-                <i class="fas fa-chevron-right"></i>   
-              </a>
-            </div>
-            <div class="pleca"></div>
-
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Extracto sección multimedia inicio-->
     <section class="multimedia-home home">
-      <article class="multimedia-tsinaka_item">
-        <div class="title-section-img">
-          <img src="./assets/img/multimedia/injuve-logo.jpg" alt="">
+
+      <!-- Cabecera de Sección -->
+      <article class="series-tsinaka_item">
+
+        <!--btn-->
+        <a class="btn-link-all_title" href="#">VER TODO<i class="fas fa-chevron-right"></i></a>
+
+        <!-- título -->
+        <div class="content-text title-section">
+          <h2 class="title -seccion">Series</h2>
         </div>
-    </article>
 
-    <!-- banners multimedia -->
-    <div class="grid-x grid-margin-x ">
+      </article>
 
-      <!-- banner -->
-      <div class="cell large-8">
-        <div class="content-video">
+      <br>
 
-          <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- banners multimedia -->
+      <div class="grid-x grid-margin-x ">
+        <!-- banner -->
+        <div class="cell large-8">
+          <div class="content-video">
+            <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="content-news">
+            <div class="content-text -news">
+              
+           
+              <h2 class="title -news">Noticias locales 01 de abril 202</h2>
+              <p>Titulares Autoridades de San Miguel Tzinacapan acordaron instalar la base de policías para este jueves 2 de abril debido a recientes actos delictivos...</p>
+            </div>
+        </div>
 
         </div>
+
+        <!-- banner -->
+        <div class="cell large-4">
+
+          <div class="video-small">
+            <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> 
+            <div class="content-news">
+              <div class="content-text -news">
+   
+             
+                <h2 class="title -news">Noticias locales 01 de abril 202</h2>
+                <p>Titulares Autoridades de San Miguel Tzinacapan acordaron instalar la base de policías para este jueves 2 de abril debido a recientes actos delictivos...</p>
+              </div>
+          </div>
+          </div> 
+          <div class="video-small">
+            <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe> 
+                      <div class="content-news">
+            <div class="content-text -news">
+              
+           
+              <h2 class="title -news">Noticias locales 01 de abril 202</h2>
+              <p>Titulares Autoridades de San Miguel Tzinacapan acordaron instalar la base de policías para este jueves 2 de abril debido a recientes actos delictivos...</p>
+            </div>
+        </div>
+          </div>   
+
+        </div>
+
       </div>
-      <!-- banner -->
-      <div class="cell large-4">
-        <div class="content-twitter">
-          <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Espacio de complacencias <a href="https://t.co/s0t14nucDW">https://t.co/s0t14nucDW</a></p>&mdash; radio tsinaka (@RadioTsinaka) <a href="https://twitter.com/RadioTsinaka/status/1126290653518807040?ref_src=twsrc%5Etfw">May 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-
-      </div>
-    </div>
 
     </section>
 

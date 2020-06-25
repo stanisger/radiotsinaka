@@ -1,48 +1,49 @@
 
+/* menu móbile */
 .off-canvas .menu {
     margin-top: 2rem;
 }
 
-.off-canvas .menu a {
-    color: black;
-    font-size: .9rem;
-    font-weight: 400;
-}
+    .off-canvas .menu a {
+        color: black;
+        font-size: .9rem;
+        font-weight: 400;
+    }
 
-.off-canvas .menu a i {
-    font-size: 1.3rem;
-    color: var(--sec);
-}
+        .off-canvas .menu a i {
+            font-size: 1.3rem;
+            color: var(--sec);
+        }
 
-.off-canvas .menu a.active {
-    font-weight: 800;
-    background: white;
-}
+        .off-canvas .menu a.active {
+            font-weight: 800;
+            background: white;
+        }
 
-.off-canvas .vertical a i {
-    font-size: 1rem;
-    vertical-align: text-top;
-    margin-right: .5rem;
-    opacity: .7;
-}
+            .off-canvas .vertical a i {
+                font-size: 1rem;
+                vertical-align: text-top;
+                margin-right: .5rem;
+                opacity: .7;
+            }
 
-.off-canvas .vertical a.active i {
-    opacity: 1;
-}
+            .off-canvas .vertical a.active i {
+                opacity: 1;
+            }
 
 
 header {
+    background-color: var(--fou);
+    font-family: var(--body);
     top: 0;
     position: fixed;
     width: 100%;
-    z-index: 3;
-    font-family: var(--body);
     margin-left: auto;
     margin-right: auto;
     right: 0;
     left: 0;
     transition: all .6s ease;
-    background-color: pink;
+    z-index: 3;
 }
 
     .nav-top { 
@@ -51,6 +52,7 @@ header {
     -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.0);
     box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.0);
     }
+
     .nav-move {
         max-width: 100%;
         -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
@@ -214,12 +216,17 @@ header .logo-radio-tsinaka {
                 }
 
                 header .menu-desktop-lg li:last-child {
-                    border: 1px solid var(--sec);
+                    background-color: black;
+                    margin-left: .5rem;
                 }
 
-                header .menu-desktop-lg li:last-child a{
+                header .menu-desktop-lg li:last-child a {
                     color: var(--sec);
                 }
+
+                    header .menu-desktop-lg li:last-child a i {
+                        color: white;
+                    }
 
 
                 @media (min-width:992px) {
@@ -316,11 +323,35 @@ header .logo-radio-tsinaka {
         position: absolute;
         z-index: 10;
         display: none;
-        width: 300px;
+        width: 400px;
         padding: 1rem 1rem .2rem;
+        background-color: black;
         visibility: hidden;
-        border: 1px solid #cacaca;
+        border: none;
         border-radius: 0;
-        background-color: #fefefe;
         font-size: .9rem;
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.8)
     }
+        .dropdown-pane i {
+            position: absolute;
+            right: 6px;
+            top: 3px;
+            cursor: pointer;
+        }
+
+        .dropdown-pane input {
+            background-color: transparent;
+            color: white;
+        }
+
+        .dropdown-pane input[type=text]:focus {
+            background-color: transparent;
+        }
+
+     @media (max-width:768px) {
+        .dropdown-pane {
+            width: 80%;
+        } 
+     }   
+
+    

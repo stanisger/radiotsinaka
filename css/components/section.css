@@ -18,7 +18,7 @@ section.home {
 
     @media (min-width: 1024px) {
         section.home {
-            padding: 6rem 1rem 4rem;
+            padding: 4rem 1rem 4rem;
             position: relative;
         }   
     }
@@ -28,7 +28,8 @@ section.home {
 section.blog-tsinaka.home .content-text .title.-seccion,
 section.programas-home.home .content-text .title.-seccion,
 section.series-home.home .content-text .title.-seccion,
-section.apoyo-home.home .content-text .title.-seccion {
+section.apoyo-home.home .content-text .title.-seccion,
+section.multimedia-home.home .content-text .title.-seccion {
     color: black;
     font-size: 1.1rem;
     margin: 0;
@@ -39,7 +40,8 @@ section.apoyo-home.home .content-text .title.-seccion {
     section.blog-tsinaka.home .content-text .title.-seccion,
     section.programas-home.home .content-text .title.-seccion,
     section.series-home.home .content-text .title.-seccion,
-    section.apoyo-home.home .content-text .title.-seccion {
+    section.apoyo-home.home .content-text .title.-seccion,
+    section.multimedia-home.home .content-text .title.-seccion {
         color: black;
         font-size: 1.7rem;
         margin: 0;
@@ -92,7 +94,7 @@ section.apoyo-home.home .content-text .title.-seccion {
                 .btn-link-all {
                     font-size: .9rem;
                     right: 2rem;
-                    top: 8rem;
+                    top: 7rem;
                 }
             }
 

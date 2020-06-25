@@ -16,6 +16,11 @@
         color: black;
     }
 
+    .date {
+        font-size: .8rem;
+        color: black;
+    }
+
     .content-text.-in {
         position: relative;
         padding: .5rem 0;

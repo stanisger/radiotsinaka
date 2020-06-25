@@ -1,7 +1,14 @@
 $(document).foundation()
 // document.getElementById('tag-id').innerHTML = '<ol><li>html data</li></ol>';
 
+
+$('#close-s').click(function(){
+  $('#example-dropdown-bottom-right-dektop, #example-dropdown-bottom-right').foundation('close');
+});
+
 $(window).scroll(function(){
+
+  $('#example-dropdown-bottom-right-dektop, #example-dropdown-bottom-right').foundation('close');
 
     //animation telefono
 	var wScroll = $(this).scrollTop();
