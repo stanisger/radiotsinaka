@@ -9,8 +9,14 @@ h1, h2, h3 {
 }
 
 body {
-    background: #f9f9f9;
+    background: white;
 }
+
+    @media(min-width:768px) {
+        body {
+            background: #f7f7f7;
+        }  
+    }
 
 figure {
     margin: 0;
@@ -65,4 +71,10 @@ hr {
         max-width: 75rem;
         border-bottom: 3px solid black;
     }  
+}
+
+hr.hr-small {
+    max-width: 100%;
+    margin: .5rem auto;
+    border-bottom: 1px solid black;
 }

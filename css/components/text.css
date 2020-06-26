@@ -40,9 +40,19 @@
 
     .content-text.-in .title {
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         letter-spacing: -.8px;
+        line-height: 1.3rem;
+        padding-right: 7rem;
     }
+        @media (min-width: 620px) {
+            .content-text.-in .title {
+                font-size: 1.4rem;
+                letter-spacing: -.8px;
+                line-height: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
 
     /* 3- Descriptivo o parrafo. */
     .content-text p {
@@ -91,10 +101,10 @@
 
     .content-text p.descript {
         color: grey;
-        line-height: 1rem;
+        line-height: 1.33rem;
         font-family: var(--body);
-        font-size: .7rem;
-        margin-bottom: 0;
+        font-size: .85rem;
+        margin: 1rem auto 1rem;
     }
 
         @media (min-width: 620px) {
@@ -108,7 +118,8 @@
             @media (min-width: 768px) {
                 .content-text p.descript {
                     line-height: 1.9rem;
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
+                    margin-bottom: 2rem;
                     
                 }
             }

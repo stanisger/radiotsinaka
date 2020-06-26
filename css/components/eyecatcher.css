@@ -22,7 +22,6 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
     @media (min-width: 768px) {
         .eyecatcher {
             margin-top: 8.5rem;
-            background-color: var(--main);
         }
     }
 
@@ -314,7 +313,7 @@ Hoja de estilos para el blog y la seeción del blog en el inicio
         @media (min-width: 1024px) {
             .eyecatcher-in {
                 height: 350px;
-                margin-top: 9rem;
-                padding: 5rem 2rem 0;
+                margin-top: 8.5rem;
+                padding: 7rem 2rem 0;
             }
         }

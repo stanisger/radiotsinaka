@@ -268,11 +268,17 @@
 
 
 .menu.share-blog.-in {
-    width: 7rem;
+    width: 6.5rem;
     position: absolute;
     right: -1rem;
-    top:-.5rem;
+    top: .5rem;
 }
+
+    @media (min-width:768px) {
+        .menu.share-blog.-in {
+            top:-.5rem;
+        }  
+    }
     
     
 .in-blog {

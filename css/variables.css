@@ -16,6 +16,32 @@
   background-color: var(--main) !important;
 }
 
+.bg-main-lg {
+  background-color: transparent ;
+}
+
+  @media(min-width:768px){
+    .bg-main-lg {
+      background-color: var(--main) ;
+    }
+    
+  }
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bg-black-lg {
+  background-color: transparent ;
+}
+
+  @media(min-width:768px){
+    .bg-black-lg {
+      background-color:  black;
+    }
+  }
+
+
 .c-main {
   color: var(--main) !important;
 }

@@ -12,17 +12,28 @@
 </head>
 <body>
 
-
+  <!-- Menú versión móbile -->
   <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
     <ul class="vertical menu">
-      <li><a class="active" href="#"><i class="fas fa-home"></i>Inicio</a></li>
-      <li><a href="#"><i class="fas fa-newspaper"></i>Noticiero</a></li>
-      <li><a href="#"><i class="fas fa-microphone-alt"></i>Programación</a></li>
-      <li><a href="#"><i class="fas fa-file-audio"></i>Producciónes</a></li>
-      <li><a href="#"><i class="fas fa-mail-bulk"></i>Contacto</a></li>
-      <li><a href="#"><i class="fas fa-hand-holding-usd"></i>Apóyanos</a></li>
+      <li><a class="active" href="#">Inicio</a></li>
+      <li><a href="#">Noticiero</a></li>
+      <li><a href="#">Programas</a>
+        <ul class="nested vertical menu">
+          <li><a href="#">El saber de mi Pueblo</a></li>
+          <li><a href="#">Semillas en Resistencia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Series Radiofónicas</a>
+        <ul class="nested vertical menu">
+          <li><a href="#">El saber de mi Pueblo</a></li>
+          <li><a href="#">Semillas en Resistencia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Apóyanos</a></li>
     </ul>
-    <ul class="menu">
+    <br>
+    <ul class="menu redes">
       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -30,13 +41,11 @@
     </ul>
   </div>
 
-  <!-- Your page content lives here -->
+  <!--///// Empieza el código del sitio ////-->
   <div class="off-canvas-content" data-off-canvas-content>
 
-     
-     <!-- Herramientas versión móvil -->
+    <!--// Herramientas versión móvil: radio en vivo y btn whatsApp //-->
     <div class="tools-mobile">
-  
         <div class="btn-live">
             <div class="btn-live-content">
                 <div class="btn-live_item">
@@ -53,152 +62,137 @@
         </div>
     </div>
 
-    <!-- Cabercera de sitio -->
+    <!--// Cabercera de sitio //-->
     <header class="header nav-top">
-
         <div class="grid-x">
 
-          
-          <div class="cell small-3">
+          <!-- Botón de menú -->
+          <div class="cell small-2">
             <div class="btn-menu-mobile" type="button" data-toggle="offCanvas">
               <i class="fas fa-bars"></i>
             </div>
           </div> 
           
           <!-- Herramientas version móvil -->
-          <div class="cell small-9">
+          <div class="cell small-10">
             <div class="version-web ">
               
-              <a href="" class="active">
-                <i class="fas fa-chevron-right"></i>    
-                Español
-              </a>
-              <a href="">Náhuatl</a>
+              <!-- idioma -->
+              <a href="" class="active">ESP</a>
+              <a href="">NÁH</a>
+             
+              <!-- buscador -->
+              <i data-toggle="example-dropdown-bottom-right" class="fas fa-search"></i>
+              <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-close-on-click="true">
+                <input type="text" placeholder="Buscar">
+              </div>
+
             </div>
           </div>
 
-            <!-- logotipo -->
-            <div class="cell medium-2 large-3">
-                <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
-            </div>
+          <!-- logotipo -->
+          <div class="cell medium-2 large-3">
+              <img class="logo-radio-tsinaka" src="./assets/img/logo-radio-tsinaka.jpg" alt="">
+          </div>
 
-           <!-- menú versión escritorio -->
-            <div class="menu-all-tools-desktop cell medium-10 large-9">
-              
-              <!-- Herramientas versión escritorio -->
-              <ul class="menu align-right tools-desktop">
-                <li>
-                  <div class="version-web-desktop">
-                    <a href="" class="active">
-                        <i class="fas fa-chevron-right"></i>    
-                        Versión Español
-                    </a>
-                    <a href="">
-                      <i class="fas fa-chevron-right"></i>   
-                        Versión Náhuatl</a>
+          <!-- menú versión escritorio -->
+          <div class="menu-all-tools-desktop cell medium-10 large-9">
+            
+            <!-- Herramientas versión escritorio -->
+            <ul class="menu align-right tools-desktop">
+              <li>
+                <div class="version-web-desktop">
+                  <a href="" class="active">
+                      <i class="fas fa-chevron-right"></i>    
+                      Versión Español
+                  </a>
+                  <a href="">
+                    <i class="fas fa-chevron-right"></i>   
+                      Versión Náhuatl</a>
+              </div>
+              </li>
+              <li>
+                <div class="btn-live">
+                  <div class="btn-live-content">
+                      <div class="btn-live_item">
+                          <h3>RADIO<br>EN VIVO</h3>
+                      </div>
+                      <div class="btn-live_item">
+                          <i class="fas fa-play-circle"></i>
+                      </div>
+
+                  </div>
+              </div>
+              </li> 
+
+              <!-- menu de redes sociales y teléfono -->
+              <li class="flex-column menu-contact-redes">
+                <ul class="menu menu-contact_icons">
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="link-wp" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                  <a class="link-tel" href="">TEL: 233 111 63 68</a>
+              </li>
+            </ul>
+            
+
+            <ul class="dropdown menu align-right menu-desktop-lg"  data-dropdown-menu >
+              <li><a class="active" href="#">Inicio</a></li>
+              <li><a href="#">Noticiero</a></li>
+              <li>
+                <a href="#">Programas</a>
+                <ul class="menu" >
+                  <li><a href="#">El Saber de mi Pueblo</a></li>
+                  <li><a href="#">Semillas en Resistencia</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Series Radiofónicas</a>
+                <ul class="menu" >
+                  <li><a href="#">El Saber de mi Pueblo</a></li>
+                  <li><a href="#">Semillas en Resistencia</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Programación</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Apóyanos</a></li>
+              <li data-toggle="example-dropdown-bottom-right-dektop"><a><i class="fas fa-search" ></i></a></li>
+            </ul>
+                <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right-dektop" data-dropdown data-close-on-click="true">
+                  <input type="text" placeholder="Buscar">
+                  <i class="fas fa-times-circle c-white" id="close-s"></i>
                 </div>
-                </li>
-                <li>
-                  <div class="btn-live">
-                    <div class="btn-live-content">
-                        <div class="btn-live_item">
-                            <h3>RADIO<br>EN VIVO</h3>
-                        </div>
-                        <div class="btn-live_item">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-        
-                    </div>
-                </div>
-                </li> 
-
-                <!-- menu de redes sociales y teléfono -->
-                <li class="flex-column menu-contact-redes">
-                  <ul class="menu menu-contact_icons">
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="link-wp" href="#"><i class="fab fa-whatsapp"></i></a></li>
-                  </ul>
-                   <a class="link-tel" href="">TEL: 233 111 63 68</a>
-                </li>
-              </ul>
-              
-
-              <ul class="menu align-right menu-desktop-lg">
-                <li><a class="active" href="#">INICIO</a></li>
-                <li><a href="#">NOTICIERO</a></li>
-                <li><a href="#">PROGRAMACIÓN</a></li>
-                <li><a href="#">PRODUCCIONES</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="#">APÓYANOS</a></li>
-              </ul>
-            </div>
+          </div>
          
         </div>
-     
     </header>
 
 
+    <section class=" eyecatcher eyecatcher-in" data-interchange="[./assets/img/series/serie-in-lg-2.jpg, small]">
+        <div class="content-text">
+          <span class="subtitle-category"> SERIE RADIOFÓNICA</span>
+          <h2 class="title_int">El saber de mi pueblo</h2>
+        </div>
+    </section>
 
-  <section class=" eyecatcher eyecatcher-in" data-interchange="[./assets/img/series/serie-in-lg-2.jpg, small]">
-      <div class="content-text">
-        <span class="subtitle-category"> SERIE RADIOFÓNICA</span>
-        <h2 class="title_int">El saber de mi pueblo</h2>
-      </div>
-  </section>
-  
-  <section class="in">
-      <div class="grid-x grid-margin-x ">
-        <div class="large-12 cell">
-          <div class="content-text text-center">
-           <p class="descript">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error harum similique pariatur rem nam maiores tempora, nostrum at eum inventore quas dolorem nulla impedit temporibus aut? Officiis excepturi alias obcaecati!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error harum similique pariatur rem nam maiores tempora, nostrum at eum inventore quas dolorem nulla impedit temporibus aut? Officiis excepturi alias obcaecati!
-           </p>
-           <br>
+    <!--//// inicio de contenido ////-->
+    <section class="in">
+        <div class="grid-x grid-margin-x ">
+          <div class="large-12 cell">
+            <div class="content-text text-center">
+            <p class="descript"><strong> Lorem, ipsum dolor sit amet</strong> consectetur adipisicing elit. Error harum similique pariatur rem nam maiores tempora, nostrum at eum inventore quas dolorem nulla impedit temporibus aut? Officiis excepturi alias obcaecati!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error harum similique pariatur rem nam maiores tempora, nostrum at eum inventore quas dolorem nulla impedit temporibus aut? Officiis excepturi alias obcaecati!
+            </p>
+            <br>
+            </div>
           </div>
         </div>
-      </div>
-      <hr>
-    <div class="grid-x grid-margin-x">
-        
-          <div class="medium-6 cell">
-
-            <div class="grid-x grid-margin-x">
-              <div class=" medium-12 large-5 cell show-for-medium">
-                <p><img src="assets/img/series/mujeresatenco.jpg" alt="image for article" alt="article preview image"></p>
-              </div>
+      
+      <div class="grid-x grid-margin-x">
           
-              <div class=" large-7 cell">
-                <div class="content-text -in">
-                  <ul class="menu share-blog -in">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                  </ul>
-
-                  <span class="date">1 Abril 2020</span>
-                  <h3 class="title">Mujeres de Atencos</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
-                </div>
-              </div>
-
-              <div class="large-12 cell">
-
-                <audio controls>
-                  <source src="horse.ogg" type="audio/ogg">
-                  <source src="horse.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-        
-            <hr>
-            
-        </div>
-
         <div class="medium-6 cell">
-
           <div class="grid-x grid-margin-x">
             <div class=" medium-12 large-5 cell show-for-medium">
               <p><img src="assets/img/series/mujeresatenco.jpg" alt="image for article" alt="article preview image"></p>
@@ -211,10 +205,9 @@
                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
                 </ul>
-
                 <span class="date">1 Abril 2020</span>
-                <h3 class="title">Mujeres de Atencos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+                <h3 class="title">Mujeres de Atencos en luchas una constante en la sierra</h3>
+               
               </div>
             </div>
 
@@ -226,32 +219,119 @@
               Your browser does not support the audio element.
               </audio>
             </div>
-          </div>
-      
-          <hr>
-          
+          </div>  
+          <br>
+        </div>
+
+        <div class="medium-6 cell">
+          <div class="grid-x grid-margin-x">
+            <div class=" medium-12 large-5 cell show-for-medium">
+              <p><img src="assets/img/series/mujeresatenco.jpg" alt="image for article" alt="article preview image"></p>
+            </div>
+        
+            <div class=" large-7 cell">
+              <div class="content-text -in">
+                <ul class="menu share-blog -in">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <span class="date">1 Abril 2020</span>
+                <h3 class="title">Mujeres de Atencos en luchas una constante en la sierra</h3>
+                <a class="btn-link-all_in" href="">LEER MÁS<i class="fas fa-chevron-right"></i> </a>
+              </div>
+            </div>
+
+            <div class="large-12 cell">
+
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>  
+          <br>
+        </div>
+        <div class="medium-6 cell">
+          <div class="grid-x grid-margin-x">
+            <div class=" medium-12 large-5 cell show-for-medium">
+              <p><img src="assets/img/series/mujeresatenco.jpg" alt="image for article" alt="article preview image"></p>
+            </div>
+        
+            <div class=" large-7 cell">
+              <div class="content-text -in">
+                <ul class="menu share-blog -in">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <span class="date">1 Abril 2020</span>
+                <h3 class="title">Mujeres de Atencos en luchas una constante en la sierra</h3>
+                <a class="btn-link-all_in" href="">LEER MÁS<i class="fas fa-chevron-right"></i> </a>
+              </div>
+            </div>
+
+            <div class="large-12 cell">
+
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>  
+          <br>
+        </div>
+        <div class="medium-6 cell">
+          <div class="grid-x grid-margin-x">
+            <div class=" medium-12 large-5 cell show-for-medium">
+              <p><img src="assets/img/series/mujeresatenco.jpg" alt="image for article" alt="article preview image"></p>
+            </div>
+        
+            <div class=" large-7 cell">
+              <div class="content-text -in">
+                <ul class="menu share-blog -in">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <span class="date">1 Abril 2020</span>
+                <h3 class="title">Mujeres de Atencos en luchas una constante en la sierra</h3>
+               
+              </div>
+            </div>
+
+            <div class="large-12 cell">
+
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>  
+          <br>
+        </div>
+     
+
+
+        <ul class="pagination" role="navigation" aria-label="Pagination">
+          <br>
+          <li class="disabled">Atrás <span class="show-for-sr">page</span></li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li><a href="#" aria-label="Next page">Siguiente <span class="show-for-sr">page</span></a></li>
+        </ul>
+    
       </div>
+   </section>
 
-
-      <ul class="pagination" role="navigation" aria-label="Pagination">
-        <li class="disabled">Atrás <span class="show-for-sr">page</span></li>
-        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li><a href="#" aria-label="Next page">Siguiente <span class="show-for-sr">page</span></a></li>
-      </ul>
-
-  
-    </div>
-
-
-
-
-</section>
-
+  <hr>
      <!-- extracto de progrmas radiofónicos -->
-     <section class="programas-home home bg-ter" >
+     <section class="programas-home home" >
        
       <article class="programas-tsinaka_item">
         <a class="btn-link-all_title" href="#">
@@ -320,18 +400,10 @@
           </a>
         </div>
       </div>
-
-
-
-
-
     </div>
-
     </section>
 
-
-
-  <footer class="marketing-site-footer">
+    <footer class="marketing-site-footer">
     <div class="footer-content">
         <div class="grid-x medium-unstack">
 
@@ -387,19 +459,19 @@
         Todos lo derechos reservados, Radio Tsinaka 2020.   |  Al utilizar este sitio web usted acepta el uso de cookies.  <a href="#">Más información</a>
       </div>
     </div>
-  
-  
-
-
   </div>
     
 <!-- Compressed JavaScript -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="./assets/js/foundation.min.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/what-input.js"></script>
+<script src="./assets/js/foundation.js"></script>
 <script src="./assets/js/owl.carousel.js"></script>
 <script src="./assets/js/app.js"></script>
 <script>
+   $(document).foundation();
   $(document).ready(function() {
+
+      // carrusel de programas
     $('.owl-carousel-programs').owlCarousel({
       loop: true,
       margin: 10,
@@ -423,7 +495,8 @@
         }
       }
     });
-
+  
+  // carrusel de series radiofónicas
     $('.owl-carousel-series').owlCarousel({
       loop: true,
       margin: 10,
@@ -447,7 +520,8 @@
         }
       }
     });
-
+     
+    // carrusel de eyecatcher
     $('.owl-carousel-eye').owlCarousel({
     
     autoplay: true,

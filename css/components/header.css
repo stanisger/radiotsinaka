@@ -1,23 +1,52 @@
 
 /* menu móbile */
+.off-canvas {
+    background: black;
+}
 .off-canvas .menu {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
+    .off-canvas .menu >li {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .off-canvas .redes li {
+       border: 0;
+    }
+
     .off-canvas .menu a {
-        color: black;
+        color: white;
         font-size: .9rem;
-        font-weight: 400;
+        font-weight: 800;
+        transition: all .4s ease;
+    }
+
+    .off-canvas .menu a:hover {
+        opacity: .5;
+    }
+
+    .off-canvas .menu .nested {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .off-canvas .menu .nested li{
+        border: 0;
+    }
+
+    .off-canvas .menu .nested a {
+        font-weight: 600;
+        padding: .4rem 1rem;
     }
 
         .off-canvas .menu a i {
             font-size: 1.3rem;
-            color: var(--sec);
+            color: white;
         }
 
         .off-canvas .menu a.active {
-            font-weight: 800;
-            background: white;
+            background: rgba(255,255,255,0.2);
         }
 
             .off-canvas .vertical a i {

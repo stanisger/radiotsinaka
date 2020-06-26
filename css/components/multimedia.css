@@ -12,7 +12,7 @@
     padding: 0 1rem;
  }
 
-    @media (min-width: 768px) {
+    @media (min-width: 640px) {
             .multimedia-home {
                 max-width: 75rem;
             }
@@ -39,7 +39,6 @@
 }
 
     @media (min-width: 768px) {
-
         .multimedia-home .content-video  iframe {
             height: 440px;
         }
@@ -56,9 +55,10 @@
     .multimedia-home .content-text.-news {
         margin-bottom: 1rem;
         display: block;
-        padding: 2.5rem 0 2rem;
+        padding: .5rem 0 2rem;
         position: relative;
     } 
+
 
         @media (min-width: 1024px) {
             .multimedia-home .content-text.-news {

@@ -15,15 +15,25 @@
   <!-- Menú versión móbile -->
   <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
     <ul class="vertical menu">
-      <li><a class="active" href="#"><i class="fas fa-home"></i>Inicio</a></li>
-      <li><a href="#"><i class="fas fa-newspaper"></i>Noticiero</a></li>
-      <li><a href="#"><i class="fas fa-microphone-alt"></i>Programación</a></li>
-      <li><a href="#"><i class="fas fa-file-audio"></i>Producciónes</a></li>
-      <li><a href="#"><i class="fas fa-mail-bulk"></i>Videos</a></li>
-      <li><a href="#"><i class="fas fa-hand-holding-usd"></i>Apóyanos</a></li>
-      <li><a href="#"><i class="fas fa-hand-holding-usd"></i></a></li>
+      <li><a class="active" href="#">Inicio</a></li>
+      <li><a href="#">Noticiero</a></li>
+      <li><a href="#">Programas</a>
+        <ul class="nested vertical menu">
+          <li><a href="#">El saber de mi Pueblo</a></li>
+          <li><a href="#">Semillas en Resistencia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Series Radiofónicas</a>
+        <ul class="nested vertical menu">
+          <li><a href="#">El saber de mi Pueblo</a></li>
+          <li><a href="#">Semillas en Resistencia</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">Apóyanos</a></li>
     </ul>
-    <ul class="menu">
+    <br>
+    <ul class="menu redes">
       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
       <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -167,7 +177,7 @@
     <!--// Carrusel principal "eyecatcher" //-->
     <section class="eyecatcher">
       <div class="owl-carousel owl-carousel-eye">
-        <div class="item">
+        <div class="item bg-main-lg">
           <article class="content-elements">
             <div class="content-text">
               <!-- <small class="category">RADIO COMUNITARIA</small> -->
@@ -180,7 +190,7 @@
             <figure data-interchange="[./assets/img/eye1.jpg, small]"></figure>
           </article>
         </div>
-        <div class="item">
+        <div class="item bg-black-lg">
           <article class="content-elements">
             <div class="content-text">
               <!-- <small class="category"> RADIO REVISTA</small> -->
@@ -428,7 +438,7 @@
       <!-- banners multimedia -->
       <div class="grid-x grid-margin-x ">
         <!-- banner -->
-        <div class="cell large-8">
+        <div class="cell medium-8">
           <div class="content-video">
             <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -445,7 +455,7 @@
         </div>
 
         <!-- banner -->
-        <div class="cell large-4">
+        <div class="cell medium-4">
 
           <div class="video-small">
             <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -459,6 +469,7 @@
               </div>
           </div>
           </div> 
+
           <div class="video-small">
             <iframe src="https://www.youtube.com/embed/tEmIaZGwk8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe> 
@@ -483,8 +494,8 @@
 
         <!-- Cabecera sección -->
         <article class="apoyo-tsinaka_item">
-          <div class="content-text title-section text-center">
-            <h2 class="title -seccion">Apoyanos</h2>
+          <div class="content-text title-section">
+            <h2 class="title -seccion bold">Apoyános</h2>
           </div>
         </article>
 
@@ -622,11 +633,13 @@
 <!-- /////////fin del sitio web -->
     
 <!-- Compressed JavaScript -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="./assets/js/foundation.min.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/what-input.js"></script>
+<script src="./assets/js/foundation.js"></script>
 <script src="./assets/js/owl.carousel.js"></script>
 <script src="./assets/js/app.js"></script>
 <script>
+   $(document).foundation();
   $(document).ready(function() {
 
       // carrusel de programas
